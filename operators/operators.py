@@ -16,8 +16,8 @@ def add(a, b):
     return a + b
 
 
-def substraction(a, b):
-    """ It substract two numbers
+def subtraction(a, b):
+    """ It subtract two numbers
         
         param a: First value
         type a: int, float
@@ -29,3 +29,18 @@ def substraction(a, b):
     if type(a) == str or type(b) == str:
         raise TypeError()
     return a - b
+
+
+def division(a, b):
+    """ It divides two numbers
+        
+        param a: First value
+        type a: int, float
+        param b: Second valor
+        type b: int, float
+        
+        return: int, float
+    """
+    if type(a) == str or type(b) == str:
+        raise TypeError()
+    return a / b
