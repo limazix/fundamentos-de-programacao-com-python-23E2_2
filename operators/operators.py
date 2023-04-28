@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 
 
-def add(a, b):
+def add(a: int, b: int) -> int:
     """ It add two numbers
         
         param a: First value
-        type a: int, float
+        type a: int
         param b: Second valor
-        type b: int, float
+        type b: int
         
-        return: int, float
+        return: int
     """
     if type(a) == str or type(b) == str:
         raise TypeError()
