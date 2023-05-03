@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
 # 1. Operadores (https://www.w3schools.com/python/python_operators.asp)
 
 # 1.1. Tipos de dados
