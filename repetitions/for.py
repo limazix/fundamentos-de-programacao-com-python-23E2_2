@@ -1,14 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Funções Conhecidas
-
-# print("Hello World!")  Escreve o conteúdo no console
-# type() definir o tipo do conteúdo passado
-# len() número de itens
-# input() entrada de dados do console
-
-# 5. Repetições
-
 # 5.1 for
 
 # for <statement>:
