@@ -10,3 +10,5 @@
 # format() formatar uma string combinando texto e variáveis
 # range(start, stop, step) percorre todos os valores entre start e stop pulando a cada step
 # enumerate()
+
+# problema da escada: 

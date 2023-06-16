@@ -52,3 +52,46 @@ def busca_binaria(seq: list, target: int) -> bool:
         return busca_binaria(seq[:pos_meio], target)
     else:
         return busca_binaria(seq[pos_meio:], target)
+
+
+# dado uma frase, como fazer para escrevê-la em ordem contrária
+# abcdefg -> gfedcba
+
+
+def reversao(texto: str) -> str:
+    """Método utilizado para reverter uma string
+
+    param texto: Texto a ser revertido
+    type texto: str
+
+    return: Texto em ordem reversa
+    """
+
+    if len(texto) < 2:
+        return texto
+
+    texto_revertido = ''
+
+    for caracter_pos in range(len(texto) - 1, -1, -1):
+        texto_revertido += texto[caracter_pos]
+
+    return texto_revertido
+
+
+def reversao_rec(texto: str) -> str:
+    """Método utilizado para reverter uma string utilizando recursão
+
+    param texto: Texto a ser revertido
+    type texto: str
+
+    return: Texto em ordem reversa
+
+    abcdefg
+    return g + rec(bcdef) + a
+    """
+
+    if len(texto) < 2:
+        return texto
+    else:
+        nova_entrada = texto[1:len(texto) - 1]
+        return texto[-1] + reversao_rec(nova_entrada) + texto[0]
